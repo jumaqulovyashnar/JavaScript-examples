@@ -3,18 +3,18 @@
 
 // function createCounter(init = 5) {
 //     let count = init;
-  
+
 //     return {
 //       increment() {
 //         count++;
 //         return count;
 //       },
-  
+
 //       decrement() {
 //         count--;
 //         return count;
 //       },
-  
+
 //       reset() {
 //         count = init;
 //         return count;
@@ -50,3 +50,14 @@
 
 //     return result;
 // };
+
+
+
+// leetcode exams
+
+// function createHelloWorld() {
+//     return function() {
+//      return  'Hello World'
+//     }
+// }
+// const  newFunction=createHelloWorld();
