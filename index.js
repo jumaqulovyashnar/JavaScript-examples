@@ -61,3 +61,9 @@
 //     }
 // }
 // const  newFunction=createHelloWorld();
+
+
+function argumentsLength(...args){
+    return args.length
+}
+argumentsLength()
