@@ -175,7 +175,51 @@
 //           clearTimeout(timer);
 //           reject(err);
 //         });
-
 //     });
 //   };
 // };
+
+
+
+// last  exam
+
+// class TimeLimitedCache {
+//   constructor() {
+//     this.cache = new Map();
+//   }
+//   set(key, value, duration) {
+//     const now = Date.now();
+//     const exists =
+//       this.cache.has(key) &&
+//       this.cache.get(key).expire > now;
+//     if (this.cache.has(key)) {
+//       clearTimeout(this.cache.get(key).timer);
+//     }
+//     const expire = now + duration;
+//     const timer = setTimeout(() => {
+//       this.cache.delete(key);
+//     }, duration);
+//     this.cache.set(key, { value, expire, timer });
+//     return exists;
+//   }
+//   get(key) {
+//     const data = this.cache.get(key);
+//     if (!data) return -1;
+//     if (Date.now() > data.expire) {
+//       this.cache.delete(key);
+//       return -1;
+//     }
+//     return data.value;
+//   }
+//   count() {
+//     const now = Date.now();
+//     let total = 0;
+//     for (const [key, data] of this.cache) {
+//       if (data.expire > now) {
+//         total++;
+//       }
+//     }
+
+//     return total;
+//   }
+// }
