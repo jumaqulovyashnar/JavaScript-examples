@@ -295,6 +295,24 @@
 //     let piece = arr.slice(i, i + size);
 //     result.push(piece);
 //   }
-
 //   return result;
 // };
+
+
+// leetcode exam 
+
+
+//description
+
+//Berilgan arrayga .last() metodini qo‘shadigan kod yozing.
+//  Shu metod chaqirilganda arrayning oxirgi elementini qaytarsin. 
+// Agar array bo‘sh bo‘lsa, -1 qaytarsin.
+
+
+Array.prototype.last = function () {
+  if(this.length===0){
+    return -1;
+  }else{
+  return  this[this.length-1];
+  }
+}
