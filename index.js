@@ -375,3 +375,10 @@
 //     return  i**2;
 // })
 // console.log(b);
+
+
+// let b=[112213,1231,3,323,23,2232,32233]
+// let c=b.map(i=>{
+//     return i**2;
+// })
+// console.log(c);
