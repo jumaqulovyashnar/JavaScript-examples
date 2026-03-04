@@ -406,39 +406,39 @@
 
 // second exam
 
-let compactObject = function(obj) {
+// let compactObject = function(obj) {
 
-    if (Array.isArray(obj)) {
-        let result = [];
+//     if (Array.isArray(obj)) {
+//         let result = [];
         
-        for (let item of obj) {
-            if (Boolean(item)) {
-                if (typeof item === "object" && item !== null) {
-                    result.push(compactObject(item));
-                } else {
-                    result.push(item);
-                }
-            }
-        }
+//         for (let item of obj) {
+//             if (Boolean(item)) {
+//                 if (typeof item === "object" && item !== null) {
+//                     result.push(compactObject(item));
+//                 } else {
+//                     result.push(item);
+//                 }
+//             }
+//         }
         
-        return result;
-    }
+//         return result;
+//     }
 
-    if (typeof obj === "object" && obj !== null) {
-        let result = {};
+//     if (typeof obj === "object" && obj !== null) {
+//         let result = {};
         
-        for (let key in obj) {
-            if (Boolean(obj[key])) {
-                if (typeof obj[key] === "object") {
-                    result[key] = compactObject(obj[key]);
-                } else {
-                    result[key] = obj[key];
-                }
-            }
-        }
+//         for (let key in obj) {
+//             if (Boolean(obj[key])) {
+//                 if (typeof obj[key] === "object") {
+//                     result[key] = compactObject(obj[key]);
+//                 } else {
+//                     result[key] = obj[key];
+//                 }
+//             }
+//         }
         
-        return result;
-    }
+//         return result;
+//     }
 
-    return obj;
-};
+//     return obj;
+// };
