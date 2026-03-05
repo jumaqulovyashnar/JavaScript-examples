@@ -446,10 +446,10 @@
 
 // new exams
 
-function createHelloWorld(){
-    return function (){
-        console.log('Hello World');
+// function createHelloWorld(){
+//     return function (){
+//         console.log('Hello World');
         
-    }
-}
-createHelloWorld()
+//     }
+// }
+// createHelloWorld()
