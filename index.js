@@ -302,9 +302,9 @@
 // leetcode exam 
 
 
-//description
+// description
 
-//Berilgan arrayga .last() metodini qo‘shadigan kod yozing.
+// Berilgan arrayga .last() metodini qo‘shadigan kod yozing.
 //  Shu metod chaqirilganda arrayning oxirgi elementini qaytarsin. 
 // Agar array bo‘sh bo‘lsa, -1 qaytarsin.
 
@@ -384,7 +384,7 @@
 // console.log(c);
 
 
-//start 
+// start 
 
 // let flat = function(arr, n) {
 //     let result = [];
@@ -446,6 +446,7 @@
 
 // new exams
 
+
 // function createHelloWorld(){
 //     return function (){
 //         console.log('Hello World');
@@ -453,3 +454,16 @@
 //     }
 // }
 // createHelloWorld()
+
+
+// function compactObject(obj) {
+//   if (Array.isArray(obj)) {
+//     return obj.map(compactObject).filter(Boolean);
+//   } else if (obj && typeof obj === "object") {
+//     return Object.fromEntries(
+//       Object.entries(obj).map(([k, v]) => [k, compactObject(v)]).filter(([k, v]) => Boolean(v))
+//     );
+//   } else {
+//     return obj;
+//   }
+// }
