@@ -510,16 +510,16 @@
 
 // next exam 
 
-class ArrayWrapper {
-  constructor(nums) {
-    this.nums = nums;
-  }
+// class ArrayWrapper {
+//   constructor(nums) {
+//     this.nums = nums;
+//   }
 
-  valueOf() {
-    return this.nums.reduce((sum, n) => sum + n, 0);
-  }
+//   valueOf() {
+//     return this.nums.reduce((sum, n) => sum + n, 0);
+//   }
 
-  toString() {
-    return `[${this.nums.join(",")}]`;
-  }
-}
+//   toString() {
+//     return `[${this.nums.join(",")}]`;
+//   }
+// }
