@@ -471,37 +471,37 @@
 
 // leetcode exam
 
-class EventEmitter {
-  constructor() {
-    this.events = {};
-  }
+// class EventEmitter {
+//   constructor() {
+//     this.events = {};
+//   }
 
-  subscribe(eventName, callback) {
-    if (!this.events[eventName]) {
-      this.events[eventName] = [];
-    }
+//   subscribe(eventName, callback) {
+//     if (!this.events[eventName]) {
+//       this.events[eventName] = [];
+//     }
 
-    this.events[eventName].push(callback);
+//     this.events[eventName].push(callback);
 
-    return {
-      unsubscribe: () => {
-        const index = this.events[eventName].indexOf(callback);
-        if (index !== -1) {
-          this.events[eventName].splice(index, 1);
-        }
-      }
-    };
-  }
+//     return {
+//       unsubscribe: () => {
+//         const index = this.events[eventName].indexOf(callback);
+//         if (index !== -1) {
+//           this.events[eventName].splice(index, 1);
+//         }
+//       }
+//     };
+//   }
 
-  emit(eventName, args = []) {
-    if (!this.events[eventName]) return [];
+//   emit(eventName, args = []) {
+//     if (!this.events[eventName]) return [];
 
-    const results = [];
+//     const results = [];
 
-    for (const cb of this.events[eventName]) {
-      results.push(cb(...args));
-    }
+//     for (const cb of this.events[eventName]) {
+//       results.push(cb(...args));
+//     }
 
-    return results;
-  }
-}
+//     return results;
+//   }
+// }
