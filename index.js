@@ -565,3 +565,12 @@
 //     return this.result;
 //   }
 // }
+
+// LEETCODE    easy
+
+let toLowerCase = function (s) {
+  return s.toLowerCase();
+}
+
+toLowerCase("HELLO");
+
