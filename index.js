@@ -388,7 +388,7 @@
 
 // let flat = function(arr, n) {
 //     let result = [];
-    
+
 //     function helper(currentArr, depth) {
 //         for (let item of currentArr) {
 //             if (Array.isArray(item) && depth < n) {
@@ -398,7 +398,7 @@
 //             }
 //         }
 //     }
-    
+
 //     helper(arr, 0);
 //     return result;
 // };
@@ -410,7 +410,7 @@
 
 //     if (Array.isArray(obj)) {
 //         let result = [];
-        
+
 //         for (let item of obj) {
 //             if (Boolean(item)) {
 //                 if (typeof item === "object" && item !== null) {
@@ -420,13 +420,13 @@
 //                 }
 //             }
 //         }
-        
+
 //         return result;
 //     }
 
 //     if (typeof obj === "object" && obj !== null) {
 //         let result = {};
-        
+
 //         for (let key in obj) {
 //             if (Boolean(obj[key])) {
 //                 if (typeof obj[key] === "object") {
@@ -436,7 +436,7 @@
 //                 }
 //             }
 //         }
-        
+
 //         return result;
 //     }
 
@@ -450,7 +450,7 @@
 // function createHelloWorld(){
 //     return function (){
 //         console.log('Hello World');
-        
+
 //     }
 // }
 // createHelloWorld()
@@ -573,4 +573,18 @@
 // }
 
 // toLowerCase("HELLO");
+
+
+
+
+//lastWords exam
+
+let lengthOfLastWord = function (s) {
+   let newString = s.split(' ');
+   let lastWord = newString[newString.length - 1];
+   return lastWord.length;
+};
+
+console.log(lengthOfLastWord("Hello World"));
+
 
