@@ -579,12 +579,12 @@
 
 //lastWords exam
 
-let lengthOfLastWord = function (s) {
-   let newString = s.split(' ');
-   let lastWord = newString[newString.length - 1];
-   return lastWord.length;
-};
+// let lengthOfLastWord = function (s) {
+//    let newString = s.split(' ');
+//    let lastWord = newString[newString.length - 1];
+//    return lastWord.length;
+// };
 
-console.log(lengthOfLastWord("Hello World"));
+// console.log(lengthOfLastWord("Hello World"));
 
 
