@@ -588,19 +588,21 @@
 // console.log(lengthOfLastWord("Hello World"));
 
 
-let constructMaximumBinaryTree = function (nums = [1, 2, 3, 6, 0, 4]) {
 
-   let max = Math.max(...nums)
-   let index = nums.indexOf(max)
+// letcode tree   exam 
 
-   let min = Math.min(...nums)
+// function constructMaximumBinaryTree(nums) {
 
-   let left = nums.slice(0, index);
-   let right = nums.slice(index + 1);
+//   if (nums.length === 0) return null;
 
+//   let max = Math.max(...nums);
+//   let index = nums.indexOf(max);
 
+//   return {
+//     val: max,
+//     left: constructMaximumBinaryTree(nums.slice(0, index)),
+//     right: constructMaximumBinaryTree(nums.slice(index + 1))
+//   };
+// }
 
-};
-
-constructMaximumBinaryTree()
-
+// console.log(constructMaximumBinaryTree([1,2,3,6,0,4]));
