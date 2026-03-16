@@ -627,7 +627,6 @@
 // };
 
 
- 
 //  let  isSameTree = function(p, q) {
 //     if (!p && !q) return true;
 //     if (!p || !q) return false;
@@ -635,3 +634,22 @@
 //     return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
 // };
 // isSameTree()
+
+
+// let binaryTreePaths = function (root) {
+//     if (!root) return []
+//     if (!root.left && !root.right) return [root.val.toString()]
+//     let result = [];
+//     let leftPaths = binaryTreePaths(root.left);
+//     for (let path of leftPaths) {
+//         result.push(root.val + "->" + path);
+//     }
+//     let rightPaths = binaryTreePaths(root.right);
+//     for (let path of rightPaths) {
+//         result.push(root.val + "->" + path);
+//     }
+
+//     return result;
+// };
+// binaryTreePaths()
+
