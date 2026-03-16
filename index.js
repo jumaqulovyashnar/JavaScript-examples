@@ -653,3 +653,28 @@
 // };
 // binaryTreePaths()
 
+
+// let countDigitOne = function(n) {
+//     if (n < 0) return 0;
+//     let count = 0;
+//     let factor = 1;
+    
+//     while (factor <= n) {
+//         const divider = factor * 10;
+//         const currDigit = Math.floor(n / factor) % 10;
+//         const higher = Math.floor(n / divider);
+//         const lower = n % factor;
+        
+//         if (currDigit > 1) {
+//             count += (higher + 1) * factor;
+//         } else if (currDigit === 1) {
+//             count += higher * factor + lower + 1;
+//         } else {
+//             count += higher * factor;
+//         }
+        
+//         factor *= 10;
+//     }
+    
+//     return count;
+// };
