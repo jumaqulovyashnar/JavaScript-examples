@@ -683,23 +683,25 @@
 // };
 
 
-var eraseOverlapIntervals = function(intervals) {
-    if (intervals.length === 0) return 0;
+// add exams 
 
-    intervals.sort((a, b) => a[1] - b[1]);
+// let  eraseOverlapIntervals = function(intervals) {
+//     if (intervals.length === 0) return 0;
 
-    let count = 0;
-    let prevEnd = intervals[0][1];
+//     intervals.sort((a, b) => a[1] - b[1]);
 
-    for (let i = 1; i < intervals.length; i++) {
-        let [start, end] = intervals[i];
+//     let count = 0;
+//     let prevEnd = intervals[0][1];
 
-        if (start < prevEnd) {
-            count++;
-        } else {
-            prevEnd = end;
-        }
-    }
+//     for (let i = 1; i < intervals.length; i++) {
+//         let [start, end] = intervals[i];
 
-    return count;
-};
+//         if (start < prevEnd) {
+//             count++;
+//         } else {
+//             prevEnd = end;
+//         }
+//     }
+
+//     return count;
+// };
