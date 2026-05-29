@@ -683,9 +683,6 @@
 // };
 
 
-
-
-
 // add exams 
 
 // let  eraseOverlapIntervals = function(intervals) {
@@ -708,3 +705,51 @@
 
 //     return count;
 // };
+
+
+// const car={
+//     cars:grb,
+//     card:kjnekdbeidwub,
+// }
+
+// const red={
+//     const {cars,card}=car
+// }
+
+// let numbers = [1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20];
+
+// for (const el of numbers) {
+//     if (el % 2 === 0) {
+//         console.log(el + ': true (juft)');
+//     } else {   
+//         console.log(el + ': false (toq)');
+//     }
+// }
+
+
+// for (let i = 1; i <= 20; i++) {
+//  console.log(i);
+// }
+
+// let numbers=[1,2,3,4,5,6,7,8,9,10]
+
+// for (const el of numbers.reverse()) { // bunda toreverse methodini qollash kerak 1 marta chiqadi  array 
+//   console.log(numbers);
+// }
+
+// for(let i=1; i<=100; i++){
+//     let nums=i;
+//     if(nums%2===0){
+//         console.log(`juft sonlar bu ${nums}`);
+//     }else{
+//       `toq sonlar bu `
+//     }
+// }   
+
+// for(let j=1; j<=10; j++){
+//    console.log(j % 2 === 0 ? `juft son: ${j}` : ' juft son emas ');  
+// }
+
+// for(let i =1; i<=10; i++){
+//     console.log(i%2===1 ? ` toq son : ${i}`:' toq son emas '); 
+// }
