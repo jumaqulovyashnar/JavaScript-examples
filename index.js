@@ -765,8 +765,9 @@
 //     }
 // };
 
-
 let maxTotalValue = function (nums, k) {
+    let values = [];
+
     for (let i = 0; i < nums.length; i++) {
         let max = nums[i];
         let min = nums[i];
@@ -775,9 +776,16 @@ let maxTotalValue = function (nums, k) {
             max = Math.max(max, nums[j]);
             min = Math.min(min, nums[j]);
 
-            console.log(max - min);
+            values.push(max - min);
         }
     }
-};
 
-maxTotalValue([1, 4, 2], 2);
+    values.sort((a, b) => b - a);
+
+    let sum = 0;
+    for (let i = 0; i < k; i++) {
+        sum += values[i];
+    }
+
+    return sum;
+};
