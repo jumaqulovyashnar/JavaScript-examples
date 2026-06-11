@@ -661,13 +661,13 @@
 //     if (n < 0) return 0;
 //     let count = 0;
 //     let factor = 1;
-    
+
 //     while (factor <= n) {
 //         const divider = factor * 10;
 //         const currDigit = Math.floor(n / factor) % 10;
 //         const higher = Math.floor(n / divider);
 //         const lower = n % factor;
-        
+
 //         if (currDigit > 1) {
 //             count += (higher + 1) * factor;
 //         } else if (currDigit === 1) {
@@ -675,10 +675,10 @@
 //         } else {
 //             count += higher * factor;
 //         }
-        
+
 //         factor *= 10;
 //     }
-    
+
 //     return count;
 // };
 
@@ -753,3 +753,31 @@
 // for(let i =1; i<=10; i++){
 //     console.log(i%2===1 ? ` toq son : ${i}`:' toq son emas '); 
 // }
+
+
+// let  minimumCost = function(cost) {
+//    let totalCost=0
+
+//     if(cost>=totalCost){
+//         return cost+1
+//     }else{
+//         cost-1
+//     }
+// };
+
+
+let maxTotalValue = function (nums, k) {
+    for (let i = 0; i < nums.length; i++) {
+        let max = nums[i];
+        let min = nums[i];
+
+        for (let j = i; j < nums.length; j++) {
+            max = Math.max(max, nums[j]);
+            min = Math.min(min, nums[j]);
+
+            console.log(max - min);
+        }
+    }
+};
+
+maxTotalValue([1, 4, 2], 2);
