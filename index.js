@@ -25,8 +25,24 @@
 // }
 
 
-let names='yashnar'
+// let names='yashnar'
 
-for(let i=0 ; i<names.length; i++){
-    console.log(i+1,names[i]);
-}
+// for(let i=0 ; i<names.length; i++){
+//     console.log(i+1,names[i]);
+// }
+
+
+// let numbers = 53
+// let word = 'fizz'
+// let str = 'buzz'
+// if (numbers % 5 === 0 && numbers % 3 === 0) {
+//     console.log(`${word},${str}`);
+// } else if (numbers % 3 === 0) {
+//     console.log(word);
+// } else if (numbers % 5 === 0) {
+//     console.log(str);
+// }
+// else {
+//     console.log(numbers);
+// }
+
